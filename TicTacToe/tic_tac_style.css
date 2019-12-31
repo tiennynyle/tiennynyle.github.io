@@ -1,0 +1,40 @@
+
+h1 {
+    text-align: center;
+}
+tr {
+    width: 100px;
+    height: 100px;
+}
+td {
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+}
+.vertical{
+    border-left: solid 4px black;
+    border-right: solid 4px black;
+}
+table {
+    border-collapse: collapse;
+    text-align: center;
+    margin: auto;
+}
+.horizontal{
+    border-top: solid 4px black;
+    border-bottom: solid 4px black;
+}
+#gameMessage{
+    color: #ed6a5a;
+}
+textarea {
+    display: block;
+    margin: 20px auto;
+}
+.controls {
+    text-align: center;
+}
+.stats {
+    text-align: center;
+    margin: 20px;
+}

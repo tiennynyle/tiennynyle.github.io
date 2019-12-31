@@ -1,0 +1,65 @@
+<?xml version="1.0"?>
+<!DOCTYPE html PUBLIC " -//W3C//DTD XHTML 1.0 Strict //EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" type="text/css" href="tic_tac_style.css"/>
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+    <script type="text/javascript" src="tic-tac.js"> </script>
+    <script type="text/javascript"  src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+
+<body>
+    <h1>Tic Tac Toe Game </h1>
+    <div>
+        <textarea rows="7" cols="60" disabled autofocus>
+Rules of this game
+1. Each player will only make one move at a time
+2. Player whose obtain three consecutive symbols of "X" or "O" will win
+3. Each player will only have 30 seconds to make a move. Otherwise, they will lose
+4. If neither first nor second player obtain 2nd rule, game is tie.
+        </textarea>
+        <div class="controls">
+            <input type="button" id="startGame" value="Start Game" onclick="startGame()"/>
+            <input type="button" value="Pause Timer" onclick="pauseGame()"/>
+            <input type="button" value="Replay" onclick="reset()"/>
+            <input type="button" value="Change Name" onclick="changeName()"/>
+            <p id="gameMessage">Please press Start Game to initialize the game.</p>
+        </div>
+        <div class="stats">
+            <p>Player 1 Wins: <span id="firstPlayerWins">0</span></p>
+            <p>Player 2 Wins: <span id="secondPlayerWins">0</span></p>
+            <p>Number of Ties: <span id="tieCount">0</span></p>
+            <p>Number of Games: <span id="numberOfGames">0</span></p>
+            <label for="totalTime"> Counting Time:  </label>
+            <input type="text" id="totalTime"/>
+            <input type="button" value="Reset Wins" onclick="resetWins()"/>
+        </div>
+        <table>
+            <tr>
+                <td class="cell" id="0"></td>
+                <td class="vertical cell" id="1"></td>
+                <td class="cell" id="2"></td>
+            </tr>
+            <tr>
+                <td class="horizontal cell" id="3"></td>
+                <td class="vertical horizontal cell" id="4"></td>
+                <td class="horizontal cell" id="5"></td>
+            </tr> <tr>
+                <td class="cell" id="6"></td>
+                <td class="vertical cell" id="7"></td>
+                <td class="cell" id="8"></td>
+            </tr>
+        </table>
+    </div>
+
+
+
+
+
+
+
+
+
+</body>
+</html>
